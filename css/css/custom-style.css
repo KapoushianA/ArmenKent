@@ -1,0 +1,73 @@
+div {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #269abc;
+    padding: 15px;
+    background-color: #269abc;
+}
+/*this is for editing border color*/
+.container {
+    border-color: black;
+    background-color: blue;
+}
+
+.row {
+    border-color: navy;
+    background-color: #2aabd2;
+}
+
+.list-group-item{
+    border: 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #269abc;
+}
+
+#index{
+    background-color: #245269;
+}
+
+#technology{
+    background-color: red;
+}
+
+#project{
+    background-color: #398439;
+}
+
+.project-container{
+    background-color: green;
+    border-color: black;
+}
+
+.project-row{
+    border-color: darkgreen;
+    background-color: lime;
+}
+
+.technology-container{
+    background-color: purple;
+    border-color: blueviolet;
+}
+
+.technology-row{
+    background-color: darkorchid;
+    border-color: darkmagenta;
+}
+
+#technology{
+    background-color: plum;
+}
+
+p img{
+    width: 400px;
+    height: auto;
+}
+
+.links{
+    color: purple;
+}
+
+.dropdown-stuff{
+    background-color: 269abc;
+}
