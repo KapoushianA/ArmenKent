@@ -10,7 +10,7 @@
         <a class="current-link" href="index.php">Main Page</a>
         <div class="caption">
             <p></p>
-            <h1><a class="current-link" href="">Register a new account</a></h1>   
+            <h1><a class="current-link" href="register.php">Register a new account</a></h1>   
         </div>
         <?php
         // put your code here
