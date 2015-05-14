@@ -1,7 +1,4 @@
 game.PlayScreen = me.ScreenObject.extend({
-	/**
-	 *  action to perform on state change
-	 */
 	onResetEvent: function() {
 		// reset the score
 		game.data.score = 0;
@@ -44,8 +41,11 @@ game.PlayScreen = me.ScreenObject.extend({
 	},
         
         resetPlayer: function(x, y){
-            game.data.player3 = me.pool.pull("player3", 0, 420, {});
-            me.game.world.addChild(game.data.player3, 5);
+            game.data.player = me.pool.pull("player", 0, 420, {});
+            me.game.world.addChild(game.data.player, 5);
+            
+            game.data.player2 = me.pool.pull("player2", 0, 420, {});
+            me.game.world.addChild(game.data.player2, 5);
         }
         
 });

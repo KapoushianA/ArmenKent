@@ -14,11 +14,11 @@ and open the template in the editor.
     </head>
     <body>
         <a class="current-link" href="index.php">Main Page</a>
-              <div class="caption">
-                                <p></p>
-                            <h3><a class="current-link" href="register.php" role="button">register</a>
-                            <a class="current-link" href="register.php">sign in</a></h3>   
-                        </div>
+            <div class="caption">
+                <p></p>
+                <h3><a class="current-link" href="register.php" role="button">register</a>
+                <a class="current-link" href="signin.php">sign in</a></h3>   
+            </div>
         <?php
         // put your code here
         ?>
