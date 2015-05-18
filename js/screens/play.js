@@ -3,10 +3,12 @@ game.PlayScreen = me.ScreenObject.extend({
 		// reset the score
 		game.data.score = 0;
                 //shows what stage is gonna be loaded
-                me.levelDirector.loadLevel("level01");
+                me.levelDirector.loadLevel("map1");
                 //resets the player's location
                 this.resetPlayer(10, 0);
                 //takes out info from gameTimerManager
+                var gameTimerManager = me.pool.pull("GameManager", 0, 0, {});
+                me.game.world.addChild(gameTimerManager, 0);
                 game.gameover = false;
                 
                 //sets the keys to set an output wheen the key is pressed

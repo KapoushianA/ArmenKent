@@ -1,0 +1,16 @@
+h2 {
+    text-decoration-color: green;
+    background-color: chartreuse;
+    border: black;
+}
+
+.post p {
+    text-decoration-color: blueviolet;
+    background-color: aquamarine;
+}
+
+.post {
+    border: darkslateblue solid thick;
+    padding: auto auto auto auto;
+    background-color: steelblue;
+}
