@@ -23,10 +23,10 @@ and open the template in the editor.
                         <img data-src="holder.js/300x300" alt="">
                         <div class="caption">
                             <p></p>
-                            <h3><a class="current-link" href="register.php" role="button">register</a>
+                            <h3><a class="current-link" href="register.php" role="button">Register</a>
                             <a class="current-link" href="TheFinalGame.php">Play Now</a>
-                            <a class="current-link" href="leaderboards.php">leaderboards</a>
-                            <a class="current-link" href="signin.php">sign in</a></h3>   
+                            <a class="current-link" href="leaderboards.php">Leaderboards</a>
+                            <a class="current-link" href="signin.php">Sign in</a></h3>   
                         </div>
                     </div>
                 </div>

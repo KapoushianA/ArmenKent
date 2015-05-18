@@ -6,7 +6,7 @@
         <link type="text/css" rel="stylesheet" href="css/css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="css/css1.css">
     </head>
-    <body>
+    <body background="http://www.awshdwallpapers.com/wp-content/uploads/2014/06/awesome-plain-purple-wallpaper.jpg">
         <a class="current-link" href="index.php">Main Page</a>
         <div class="caption">
             <p></p>
