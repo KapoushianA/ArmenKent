@@ -3,7 +3,12 @@ game.resources = [
 	 * @example
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
-        {name: "example", type:"image", src: "data/img/title-screen.png"},
+        {name: "title", type:"image", src: "data/img/title-screen.png"},
+        {name: "megaman", type:"image", src: "data/img/MegaMania_MegaManPlayer.png"},
+        {name: "ryu", type:"image", src: "data/img/Untitled-1.png"},
+        {name: "p1", type:"image", src: "data/img/orcSpear.png"},
+        {name: "p2", type:"image", src: "data/img/skeletonDagger.png"},
+        {name: "forest", type:"image", src: "data/img/background-1.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
@@ -13,7 +18,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
-        {name: "example01", type: "tmx", src: "data/map/testmap.tmx"}
+        {name: "map1", type: "tmx", src: "data/map/testmap.tmx"}
 	/* Background music. 
 	 * @example
 	 * {name: "example_bgm", type: "audio", src: "data/bgm/"},
