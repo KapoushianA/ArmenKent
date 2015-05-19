@@ -3,4 +3,4 @@
     require_once(__DIR__ ."/view/login-form.php");
     require_once(__DIR__ ."/view/footer.php");
 ?>
-<!--    like index, it haves links to other files    -->
+<!--    like index, it has links to other files    -->
