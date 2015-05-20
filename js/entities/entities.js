@@ -29,7 +29,7 @@ game.Player1Entity = me.Entity.extend({
     setAttributes: function(){
         this.health = game.data.playerHealth;
         this.body.setVelocity(game.data.playerMoveSpeed, 20);
-        this.attack = game.data.playerPunch;
+        this.attack = game.data.playerAttack;
     },
     setFlags: function(){
         this.facing = "right";
@@ -67,7 +67,7 @@ game.Player1Entity = me.Entity.extend({
         if(me.input.isKeyPressed("P1UP") && !this.body.jumping && !this.body.falling){
             this.jump();
         }
-        this.attacking = me.input.isKeyPressed("attack");
+        this.attacking = me.input.isKeyPressed("P1ATTACK");
     },
     moveRight: function(){
         this.body.vel.x += this.body.accel.x * me.timer.tick;
@@ -239,7 +239,7 @@ game.Player2Entity = me.Entity.extend({
         this.health = this.health - damage;
     },
     collideHandler: function(response){
-        if(response.b.type==='Player1'){
+        if(response.b.type==='player1'){
             this.collideWithPlayer1(response);
         }
     },

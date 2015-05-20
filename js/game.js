@@ -32,8 +32,8 @@ var game = {
         me.state.change(me.state.LOADING);
     },
     "loaded": function() {
-        me.pool.register("player1", game.Player1, true);
-        me.pool.register("player2", game.Player2, true);
+        me.pool.register("player1", game.Player1Entity, true);
+        me.pool.register("player2", game.Player2Entity, true);
         me.pool.register("GameManager", game.GameManager);
 
         me.state.set(me.state.MENU, new game.TitleScreen());

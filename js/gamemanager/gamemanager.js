@@ -42,64 +42,28 @@ game.ExperienceManager = Object.extend({
 game.GameTimerManager = Object.extend({
     init: function(x, y, settings){
         this.now = new Date().getTime();
-        this.lastCreep = new Date().getTime();
         this.paused = false;
         this.alwaysUpdate = true;
     },
     
     update: function(){
         this.now = new Date().getTime();
-        this.goldTimerCheck();
-        this.creepTimerCheck();
         return true;
-    },
-    
-    goldTimerCheck: function(){
-        if(Math.round(this.now/1000)%20 ===0 && (this.now - this.lastCreep >= 1000)){
-            game.data.gold += (game.data.exp1 + 1);
-        }
-    },
-    
-    creepTimerCheck: function(){
-        if(Math.round(this.now/1000)%10 ===0 && (this.now - this.lastCreep >= 500)){
-            this.lastCreep = this.now;
-            var creep = me.pool.pull("EnemyCreep", 27500, 0, {});
-            var creepe = me.pool.pull("PlayerCreep", 100, 0, {});
-            me.game.world.addChild(creepe, 5);
-            me.game.world.addChild(creep, 5);
-        }
     }
 });
 game.HeroDeathManager = Object.extend({
     init: function(x, y, settings){
-        //updates it
         this.alwaysUpdate = true;
     }, 
     
     update: function(){
-        //checks if player/players is dead
         if(game.data.player.dead){
-            me.game.world.removeChild(game.data.player);
-            me.game.world.removeChild(game.data.MiniPlayerLocation);
+            me.game.world.removeChild(game.data.player1);;
             me.state.current().resetPlayer(10, 0);
         }else if(game.data.player2.dead){
             me.game.world.removeChild(game.data.player2);
-            me.game.world.removeChild(game.data.MiniPlayerLocation);
-            me.state.current().resetPlayer(10, 0);
-        }else if(game.data.player3.dead){
-            me.game.world.removeChild(game.data.player3);
-            me.game.world.removeChild(game.data.MiniPlayerLocation);
-            me.state.current().resetPlayer(10, 0);
-        }else if(game.data.player4.dead){
-            me.game.world.removeChild(game.data.player4);
-            me.game.world.removeChild(game.data.MiniPlayerLocation);
-            me.state.current().resetPlayer(10, 0);
-        }else if(game.data.player5.dead){
-            me.game.world.removeChild(game.data.player5);
-            me.game.world.removeChild(game.data.MiniPlayerLocation);
             me.state.current().resetPlayer(10, 0);
         }
-        
         return true;
     }
 });
