@@ -5,10 +5,15 @@ game.PlayScreen = me.ScreenObject.extend({
                 //shows what stage is gonna be loaded
                 me.levelDirector.loadLevel("map1");
                 //resets the player's location
-                this.resetPlayer(10, 0);
+                game.data.player1 = me.pool.pull("player1", 0, 420, {});
+                me.game.world.addChild(game.data.player1, 5);
+                game.data.player2 = me.pool.pull("player2", 0, 420, {});
+                me.game.world.addChild(game.data.player2, 5);
                 //takes out info from gameTimerManager
-                var gameTimerManager = me.pool.pull("GameManager", 0, 0, {});
+                var gameTimerManager = me.pool.pull("GameTimerManager", 0, 0, {});
                 me.game.world.addChild(gameTimerManager, 0);
+                var heroDeathManager = me.pool.pull("HeroDeathManager", 0, 0, {});
+                me.game.world.addChild(heroDeathManager, 0);
                 game.gameover = false;
                 
                 //sets the keys to set an output wheen the key is pressed
@@ -43,8 +48,8 @@ game.PlayScreen = me.ScreenObject.extend({
 	},
         
         resetPlayer: function(x, y){
-            game.data.player = me.pool.pull("player", 0, 420, {});
-            me.game.world.addChild(game.data.player, 5);
+            game.data.player1 = me.pool.pull("player1", 0, 420, {});
+            me.game.world.addChild(game.data.player1, 5);
             
             game.data.player2 = me.pool.pull("player2", 0, 420, {});
             me.game.world.addChild(game.data.player2, 5);

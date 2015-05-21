@@ -6,9 +6,10 @@ game.resources = [
         {name: "title", type:"image", src: "data/img/title-screen.png"},
         {name: "megaman", type:"image", src: "data/img/MegaMania_MegaManPlayer.png"},
         {name: "ryu", type:"image", src: "data/img/Untitled-1.png"},
-        {name: "p1", type:"image", src: "data/img/orcSpear.png"},
-        {name: "p2", type:"image", src: "data/img/skeletonDagger.png"},
+        {name: "player1", type:"image", src: "data/img/orcSpear.png"},
+        {name: "player2", type:"image", src: "data/img/skeletonDagger.png"},
         {name: "forest", type:"image", src: "data/img/background-1.png"},
+        {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
 	/* Atlases 
 	 * @example
 	 * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
