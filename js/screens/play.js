@@ -10,8 +10,10 @@ game.PlayScreen = me.ScreenObject.extend({
                 game.data.player2 = me.pool.pull("player2", 0, 420, {});
                 me.game.world.addChild(game.data.player2, 5);
                 //takes out info from gameTimerManager
-                var gameTimerManager = me.pool.pull("GameManager", 0, 0, {});
+                var gameTimerManager = me.pool.pull("GameTimerManager", 0, 0, {});
                 me.game.world.addChild(gameTimerManager, 0);
+                var heroDeathManager = me.pool.pull("HeroDeathManager", 0, 0, {});
+                me.game.world.addChild(heroDeathManager, 0);
                 game.gameover = false;
                 
                 //sets the keys to set an output wheen the key is pressed

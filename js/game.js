@@ -34,7 +34,8 @@ var game = {
     "loaded": function() {
         me.pool.register("player1", game.Player1Entity, true);
         me.pool.register("player2", game.Player2Entity, true);
-        me.pool.register("GameManager", game.GameManager);
+        me.pool.register("GameTimerManager", game.GameTimerManager);
+        me.pool.register("HeroDeathManager", game.HeroDeathManager);
 
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());

@@ -77,7 +77,7 @@ game.Player1Entity = me.Entity.extend({
     moveLeft: function(){
         this.body.vel.x -= this.body.accel.x * me.timer.tick;
         this.facing = "left";
-        this.flipX(true);
+        this.flipX(false);
     },
     jump: function(){
         this.body.jumping = true;
