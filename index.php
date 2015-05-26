@@ -15,7 +15,7 @@ and open the template in the editor.
     </head>
     <body background="http://www.awshdwallpapers.com/wp-content/uploads/2014/06/awesome-plain-purple-wallpaper.jpg">
         <div class="jumbotron">
-            <h1 style="color: blue;">Street Kombat Brawl X</h1>
+            <h1 style="color: blue;">Street Kombat Brawl Battle Royal X</h1>
             <p></p>
             <div class="row">
                 <div class="col-sm-6">
