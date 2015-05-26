@@ -3,6 +3,7 @@ var game = {
         score: 0,
         player1: "",
         player2: "",
+        player3: "",
         playerHealth: 1000,
         playerMoveSpeed: 5,
         playerAttack: 10,
@@ -34,6 +35,7 @@ var game = {
     "loaded": function() {
         me.pool.register("player1", game.Player1Entity, true);
         me.pool.register("player2", game.Player2Entity, true);
+        me.pool.register("player3", game.Player3Entity, true);
         me.pool.register("GameTimerManager", game.GameTimerManager);
         me.pool.register("HeroDeathManager", game.HeroDeathManager);
 

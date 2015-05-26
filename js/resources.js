@@ -8,6 +8,7 @@ game.resources = [
         {name: "ryu", type:"image", src: "data/img/Untitled-1.png"},
         {name: "player1", type:"image", src: "data/img/orcSpear.png"},
         {name: "player2", type:"image", src: "data/img/skeletonDagger.png"},
+        {name: "player3", type:"image", src: "data/img/kirby.png"},
         {name: "forest", type:"image", src: "data/img/background-1.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
 	/* Atlases 
