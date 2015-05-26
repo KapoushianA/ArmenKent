@@ -14,6 +14,6 @@ and open the template in the editor.
     </head>
     <body background="http://www.awshdwallpapers.com/wp-content/uploads/2014/06/awesome-plain-purple-wallpaper.jpg">
         <a class="current-link" href="index.php">Main Page</a>
-        <h1>Leaderboards</h1>
+        <h1 style="color: white;">Leaderboards</h1>
     </body>
 </html>
