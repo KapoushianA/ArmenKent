@@ -12,7 +12,8 @@ var game = {
         specialTimer: 100,
         pausePos: "",
         pausescreen: "",
-        pausetext: ""
+        pausetext: "",
+        background: ""
     },
     "onload": function() {
         if (!me.video.init("screen", me.video.CANVAS, 1067, 600, true, '1.0')) {
@@ -38,6 +39,7 @@ var game = {
         me.pool.register("player3", game.Player3Entity, true);
         me.pool.register("GameTimerManager", game.GameTimerManager);
         me.pool.register("HeroDeathManager", game.HeroDeathManager);
+        me.pool.register("background", game.background);
 
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());

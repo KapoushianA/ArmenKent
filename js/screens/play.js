@@ -5,10 +5,12 @@ game.PlayScreen = me.ScreenObject.extend({
                 //shows what stage is gonna be loaded
                 me.levelDirector.loadLevel("map1");
                 //resets the player's location
-                game.data.player1 = me.pool.pull("player1", 0, 420, {});
+                game.data.player1 = me.pool.pull("player1", 200, 420, {});
                 me.game.world.addChild(game.data.player1, 5);
-                game.data.player3 = me.pool.pull("player3", 950, 420, {});
+                game.data.player3 = me.pool.pull("player3", 0, 0, {});
                 me.game.world.addChild(game.data.player3, 5);
+                game.data.background = me.pool.pull("background", 0, 0, {});
+                me.game.world.addChild(game.data.background, 3);
                 //takes out info from gameTimerManager
                 var gameTimerManager = me.pool.pull("GameTimerManager", 0, 0, {});
                 me.game.world.addChild(gameTimerManager, 0);
