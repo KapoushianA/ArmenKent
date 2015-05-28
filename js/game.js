@@ -3,6 +3,7 @@ var game = {
         score: 0,
         player1: "",
         player2: "",
+        player3: "",
         playerHealth: 1000,
         playerMoveSpeed: 5,
         playerAttack: 10,
@@ -11,7 +12,8 @@ var game = {
         specialTimer: 100,
         pausePos: "",
         pausescreen: "",
-        pausetext: ""
+        pausetext: "",
+        background: ""
     },
     "onload": function() {
         if (!me.video.init("screen", me.video.CANVAS, 1067, 600, true, '1.0')) {
@@ -34,12 +36,14 @@ var game = {
     "loaded": function() {
         me.pool.register("player1", game.Player1Entity, true);
         me.pool.register("player2", game.Player2Entity, true);
+        me.pool.register("player3", game.Player3Entity, true);
         me.pool.register("GameTimerManager", game.GameTimerManager);
         me.pool.register("HeroDeathManager", game.HeroDeathManager);
+        me.pool.register("background", game.background);
 
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());
 
-        me.state.change(me.state.PLAY);
+        me.state.change(me.state.MENU);
     }
 };

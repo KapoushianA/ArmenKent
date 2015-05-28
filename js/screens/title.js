@@ -9,7 +9,7 @@ game.TitleScreen = me.ScreenObject.extend({
                 me.input.registerPointerEvent('pointerdown', this, this.newGame.bind(this), true);
             },
             draw: function(renderer) {
-                this.font.draw(renderer.getContext(), "TURBO SUPER SMASH BROS ALL STARS BATTLE ROYAL AT THE OLYMPIC GAMES HD REMIX AND KNUCKLES", this.pos.x, this.pos.y);
+                this.font.draw(renderer.getContext(), "Street Kombat Brawl Battle Royal X", this.pos.x, this.pos.y);
             },
             update: function(dt) {
                 return true;

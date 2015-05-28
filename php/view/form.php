@@ -1,6 +1,6 @@
 <?php
     require_once (__DIR__ . "/../model/config.php");
-    require_once (__DIR__ . "/../controller/login-verify.php");
+    require_once (__DIR__ . "/../controller/login-logout/login-verify.php");
     //linking the pages
     if(!authenticateUser()) {
         header("Location: " . $path . "index.php");
@@ -10,7 +10,7 @@
 
 <h1>Create Blog Post</h1>
 
-<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+<form method="post" action="<?php echo $path . "controller/create/create-post.php"; ?>">
     <div>
         <label for="title">Title: </label>
         <input type="text" name="title" />
