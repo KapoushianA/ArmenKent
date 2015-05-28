@@ -7,9 +7,9 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <link type="text/css" rel="stylesheet" href="CSS/post-design.css">
-        <link type="text/css" rel="stylesheet" href="CSS/pages.css">
+        <link type="text/css" rel="stylesheet" href="css/css/post-design.css">
+        <link type="text/css" rel="stylesheet" href="css/css/pages.css">
         <!-- links to connect the css to the files -->
-        <title>Smash Blog</title>
+        <title>Final Project</title>
     </head>
     <body>

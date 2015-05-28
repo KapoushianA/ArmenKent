@@ -3,7 +3,7 @@
     session_start();
     session_regenerate_id(true);
     
-    $path = "/KZ-blog/";
+    $path = "/FinalProject/";
     
     $host = "localhost";
     $username = "root";

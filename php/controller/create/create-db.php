@@ -1,5 +1,5 @@
 <?php
-    require_once(__DIR__ . "/../model/config.php");
+    require_once(__DIR__ . "/../../model/config.php");
     //links to thee model file
     
     $query = $_SESSION["connection"]->query("CREATE TABLE posts ("

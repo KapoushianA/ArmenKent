@@ -5,12 +5,10 @@
         <group>
             <file>file:/C:/xampp/htdocs/FinalProject/js/resources.js</file>
             <file>file:/C:/xampp/htdocs/FinalProject/js/game.js</file>
-            <file>file:/C:/xampp/htdocs/FinalProject/data/img/ryu.png</file>
+            <file>file:/C:/xampp/htdocs/FinalProject/js/entities/background.js</file>
             <file>file:/C:/xampp/htdocs/FinalProject/js/screens/play.js</file>
-            <file>file:/C:/xampp/htdocs/FinalProject/data/img/kirby.png</file>
-            <file>file:/C:/xampp/htdocs/FinalProject/TheFinalGame.php</file>
             <file>file:/C:/xampp/htdocs/FinalProject/js/entities/entities.js</file>
-            <file>file:/C:/xampp/htdocs/FinalProject/data/img/Untitled-1.png</file>
+            <file>file:/C:/xampp/htdocs/FinalProject/TheFinalGame.php</file>
             <file>file:/C:/xampp/htdocs/FinalProject/js/screens/title.js</file>
         </group>
     </open-files>

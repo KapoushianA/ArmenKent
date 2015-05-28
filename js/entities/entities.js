@@ -317,7 +317,7 @@ game.Player3Entity = me.Entity.extend({
         this.renderable.addAnimation("roll", [6, 7, 8, 9, 10], 80);
         this.renderable.addAnimation("crouch", [4], 80);
         this.renderable.addAnimation("fire", [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], 80);
-        this.renderable.addAnimation("downattack", [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70], 80);
+        this.renderable.addAnimation("downattack", [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70], 20);
         this.renderable.addAnimation("downspecial", [101], 80);
     },
     update: function(delta){
