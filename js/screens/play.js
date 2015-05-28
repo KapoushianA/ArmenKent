@@ -22,7 +22,7 @@ game.PlayScreen = me.ScreenObject.extend({
                 me.input.bindKey(me.input.KEY.A, "P1LEFT");
                 me.input.bindKey(me.input.KEY.S, "P1DOWN");
                 me.input.bindKey(me.input.KEY.W, "P1UP");
-                me.input.bindKey(me.input.KEY.D, "P1LEFT");
+                me.input.bindKey(me.input.KEY.D, "P1RIGHT");
                 me.input.bindKey(me.input.KEY.LEFT, "P2LEFT");
                 me.input.bindKey(me.input.KEY.RIGHT, "P2RIGHT");
                 me.input.bindKey(me.input.KEY.UP, "P2UP");
