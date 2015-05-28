@@ -316,9 +316,10 @@ game.Player3Entity = me.Entity.extend({
         this.renderable.addAnimation("sideattack", [5], 80);
         this.renderable.addAnimation("roll", [6, 7, 8, 9, 10], 80);
         this.renderable.addAnimation("crouch", [4], 80);
-        this.renderable.addAnimation("fire", [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], 80);
-        this.renderable.addAnimation("downattack", [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70], 20);
+        this.renderable.addAnimation("fire", [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], 10);
+        this.renderable.addAnimation("downattack", [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70, 67, 68, 69, 70], 20);
         this.renderable.addAnimation("downspecial", [101], 80);
+        this.renderable.addAnimation("downsmash", [121, 122], 40);
     },
     update: function(delta){
         this.now = new Date().getTime();
@@ -354,6 +355,7 @@ game.Player3Entity = me.Entity.extend({
         this.leftattack = me.input.isKeyPressed("P2LEFT")&& me.input.isKeyPressed("P2ATTACK");
         this.special = me.input.isKeyPressed("P2SPECIAL") && me.input.isKeyPressed("P2DOWN");
         this.sidespecial = me.input.isKeyPressed("P2SPECIAL") && me.input.isKeyPressed("P2SIDE");
+        this.downsmash = me.input.isKeyPressed("P2SPECIAL") && me.input.isKeyPressed("P2DOWN") && me.input.isKeyPressed("P2ATTACK");
     },
     moveRight: function(){
         this.body.vel.x += this.body.accel.x * me.timer.tick;
@@ -399,6 +401,9 @@ game.Player3Entity = me.Entity.extend({
         }
         if(this.sidespecial){
             this.renderable.setCurrentAnimation("fire");
+        }
+        if(this.downsmash){
+            this.renderable.setCurrentAnimation("downsmash");
         }
         
     },
